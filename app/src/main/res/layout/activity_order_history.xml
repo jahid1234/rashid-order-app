@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.rashidgroupapp.Activity.OrderHistoryActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="22"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:background="#32c0ee"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:gravity="top"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:textSize="25sp"
+                        android:textColor="@android:color/white"
+                        android:text="Order Summary"
+                        android:gravity="top"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".6"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100"
+                            >
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="30"
+                                android:gravity="center"
+                                android:text="Date From : "
+                                android:textColor="#6a7170">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/dateFrom_textView"
+                                android:layout_width="0dp"
+                                android:layout_weight="50"
+                                android:layout_height="match_parent"
+                                android:hint="Date From"
+                                android:textColor="#6a7170"
+                                android:textColorHint="#6a7170"
+                                android:gravity="center"
+                                >
+                            </TextView>
+
+                            <ImageButton
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="20"
+                                android:layout_marginTop="5dp"
+                                android:id="@+id/datePicker_imagebutton_from"
+                                android:onClick="onClickDatePickerFrom"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/calendar1"
+                                android:layout_marginRight="5dp"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100"
+                            >
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="30"
+                                android:layout_height="match_parent"
+                                android:text="Date To : "
+                                android:textColor="#6a7170"
+                                android:gravity="center"
+                                >
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/dateTo_textView"
+                                android:layout_width="0dp"
+                                android:layout_weight="50"
+                                android:layout_height="match_parent"
+                                android:hint="Date To"
+                                android:textColor="#6a7170"
+                                android:textColorHint="#6a7170"
+                                android:gravity="center"
+                                >
+                            </TextView>
+
+                            <ImageButton
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="20"
+                                android:layout_marginTop="5dp"
+                                android:id="@+id/datePicker_imagebutton_to"
+                                android:onClick="onClickDatePickerTo"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/calendar1"
+                                android:layout_marginRight="5dp"
+                                />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="13"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:text="Document No"
+                android:padding="10sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:gravity="center"
+                >
+            </TextView>
+
+            <TextView
+                android:text="Customer"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:padding="10sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:gravity="center"
+                >
+            </TextView>
+
+            <TextView
+                android:text="Date"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:padding="10sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:gravity="center"
+                >
+            </TextView>
+
+            <TextView
+                android:text="Amount"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:padding="10sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:gravity="center"
+                >
+            </TextView>
+
+            <TextView
+                android:text="Details"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:padding="10sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:gravity="center"
+                >
+            </TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="47"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/order_summary_list_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="5"
+            android:weightSum="1"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".4"
+                android:text="Total Amount : "
+                android:gravity="start" />
+            <TextView
+                android:id="@+id/tPrice_summary_textView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".6"
+                android:text="1000"
+                android:gravity="start"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="13"
+            android:weightSum="1"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".4"
+                android:text="Total Amount In Words : "
+                android:gravity="start" />
+            <TextView
+                android:id="@+id/tPrice_summary_textView_inwords"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".6"
+                android:text="Hundred"
+                android:gravity="start"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

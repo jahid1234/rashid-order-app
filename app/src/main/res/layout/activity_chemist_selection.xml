@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.rashidgroupapp.Activity.ChemistSelection">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="#32c0ee"
+        android:layout_height="?attr/actionBarSize" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:text="Rashid Group"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:id="@+id/backImage_button"
+                android:background="@android:color/transparent"
+                />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/toolbar"
+        android:background="#ffffff"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:id="@+id/header_textView"
+        android:text="Order Panel"
+        android:textSize="25sp"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:textColor="#6a7170"
+        android:textColorHint="#6a7170"
+        android:textColorLink="#6a7170"
+        android:singleLine="false"
+        android:layout_marginRight="15dp"
+        />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear_layout7"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="Order Date"
+            android:textColor="#6a7170"
+            android:layout_marginTop="10dp"
+            >
+
+        </TextView>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:id="@+id/date_editText"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:text="show Date"
+            android:textSize="20sp"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:textColor="#6a7170"
+            android:textColorHint="#6a7170"
+            android:textColorLink="#6a7170"
+            android:layout_marginLeft="20dp"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:layout_marginTop="5dp"
+            android:id="@+id/datePicker_imagebutton"
+            android:onClick="onClickDatePicker"
+            android:background="@android:color/transparent"
+            android:src="@drawable/calendar1"
+            android:layout_marginRight="5dp"
+            />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:weightSum="1"
+            android:visibility="invisible"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:textSize="15sp"
+                    android:textColor="#6a7170"
+                    />
+                <TextView
+                    android:id="@+id/pnumber_textView"
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:textSize="15sp"
+                    android:textColor="#6a7170"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/date_editText"
+            android:weightSum="100"
+            >
+
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="35"
+                android:textSize="14sp"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:text="Sales Type"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"/>
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="65"
+                android:background="@android:drawable/btn_dropdown"
+                android:id="@+id/salesType_spinner"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:weightSum="100"
+
+            >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="35"
+                android:textSize="14sp"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:text="Customer Search"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="65"
+                android:gravity="center"
+                android:id="@+id/search_customer_editText"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="@android:color/black"
+                android:hint="Search"
+                android:textColorHint="#6a7170"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:weightSum="100"
+            android:gravity="end"
+            >
+
+            <CheckBox
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="64"
+                android:layout_height="wrap_content"
+                android:text="Search By Code"
+                android:textColor="#6a7170"
+                android:id="@+id/search_code_checkbox"
+                android:layout_below="@+id/password_editText"
+                android:buttonTint="@android:color/holo_blue_bright"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear_layout4"
+            android:layout_marginTop="20dp">
+
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight=".3"
+                android:textSize="14sp"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:text="Customer"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"/>
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".6"
+                android:background="@android:drawable/btn_dropdown"
+                android:id="@+id/chemistId_spinner"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear_layout5"
+            android:layout_marginTop="20dp"
+            android:weightSum="100"
+            >
+
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:textSize="14sp"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:text="Billing Location"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/location_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="70"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:layout_height="wrap_content"
+                android:text="Party Balance"
+                android:textSize="15sp"
+                android:textColor="#6a7170"
+                />
+            <TextView
+                android:id="@+id/balance_textView"
+                android:layout_width="0dp"
+                android:layout_weight="70"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="30dp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="100"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:text="Delivery Date"
+                android:textSize="15sp"
+                android:textColor="#6a7170"
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:id="@+id/delivary_date_editText"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:text="Delivary Date"
+                android:textSize="20sp"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:layout_marginLeft="25dp"
+                />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:layout_marginTop="5dp"
+                android:id="@+id/datePicker_imagebutton1"
+                android:onClick="onClickDatePickerDelivary"
+                android:background="@android:color/transparent"
+                android:src="@drawable/calendar1"
+                android:layout_marginRight="5dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="100"
+            >
+
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:textSize="14sp"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:text="Description"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:id="@+id/description_editText"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="@android:color/black"
+                android:hint="Description"
+                android:textColorHint="#6a7170"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="100"
+            >
+
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight=".4"
+                android:textSize="14sp"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:text="Promised Amount"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="100"
+                android:id="@+id/amount_editText"
+                android:inputType="number"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="@android:color/black"
+                android:hint="Promised Amount"
+                android:textColorHint="#6a7170"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go To Order"
+            android:background="@drawable/button"
+            android:id="@+id/chemistSelect_button"
+            android:layout_gravity="center"
+            android:layout_below="@+id/linear_layout4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:textAllCaps="false"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                ></TextView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

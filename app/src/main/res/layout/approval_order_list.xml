@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        >
+        <TextView
+            android:id="@+id/serial_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="SL#"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/order_doc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:text="Order Document No"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/sended_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:text=""
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/erp_doc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:text="erp Document No"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/go_approval"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:text="go and approve"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@color/backgroundBill"
+            android:textColor="@color/colorRed"
+            >
+        </TextView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="@android:color/white" />
+
+</LinearLayout>

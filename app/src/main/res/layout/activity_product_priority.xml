@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.rashidgroupapp.Other.ProductPriority">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:background="#32c0ee"
+            android:layout_height="?attr/actionBarSize" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:text="Naafco Group"/>
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:id="@+id/backImage_button"
+                    android:background="@android:color/transparent"
+                    />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/toolbar"
+            android:background="#ffffff"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:id="@+id/header_textView"
+            android:text="Product Priority"
+            android:textSize="25sp"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:textColor="#6a7170"
+            android:textColorHint="#6a7170"
+            android:textColorLink="#6a7170" />
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/header_textView"
+            android:id="@+id/linear_layout2"
+            android:layout_marginTop="50dp">
+
+
+
+            <Spinner
+                android:id="@+id/productSelection_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:layout_weight=".6"
+                android:layout_marginLeft="0dp"
+
+                />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight=".3"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:id="@+id/search_editText"
+                android:hint="Search"
+                android:textSize="15sp"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:text="Add"
+                android:layout_marginLeft="2dp"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:id="@+id/add_button"/>
+
+
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/showSelectedProduct_textview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:textSize="12sp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/linear_layout2"
+
+                />
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/showSelectedProduct_textview"
+            android:id="@+id/saveDr_button"
+            android:layout_marginTop="40dp"
+            android:background="#80d7f0"
+            android:text="Save"
+            android:layout_marginBottom="350dp"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

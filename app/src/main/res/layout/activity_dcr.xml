@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.rashidgroupapp.Other.DCR">
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:background="#32c0ee"
+            android:layout_height="?attr/actionBarSize" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:text="Naafco Group"/>
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:id="@+id/backImage_button"
+                    android:background="@android:color/transparent"
+                    />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/toolbar"
+            android:background="#ffffff"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:id="@+id/header_textView"
+            android:text="Daily Call Report"
+            android:textSize="25sp"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:textColor="#6a7170"
+            android:textColorHint="#6a7170"
+            android:textColorLink="#6a7170"/>
+
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            android:id="@+id/date_editText"
+            android:layout_below="@+id/header_textView"
+            android:text="show Date Time"
+            android:textSize="25sp"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:textColor="#6a7170"
+            android:textColorHint="#6a7170"
+            android:textColorLink="#6a7170"/>
+
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_marginTop="50dp"
+            android:entries="@array/drORpharma_array"
+            android:layout_below="@+id/date_editText"
+            android:id="@+id/drORchemist_spinner"/>
+
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/drORchemist_spinner"
+                android:id="@+id/drORpharmaName_spinner"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:id="@+id/product_linearLayout"
+            android:layout_below="@+id/drORpharmaName_spinner">
+
+
+
+            <Spinner
+                android:id="@+id/product_spinner"
+                android:layout_width="0dp"
+                android:layout_weight=".7"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight=".3"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:id="@+id/search_editText"
+                android:hint="Search"
+                android:textSize="15sp"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:layout_marginTop="12dp"/>
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:id="@+id/promoTools_linearLayout"
+                android:layout_below="@+id/product_linearLayout">
+
+                <Spinner
+                    android:id="@+id/promoTools_spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".4"
+                    android:layout_marginRight="5dp"
+                    android:background="@android:drawable/btn_dropdown"
+
+                    />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:id="@+id/qty_editText"
+                    android:hint="Quantity"
+                    android:inputType="number"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@android:color/holo_blue_bright"
+                    android:textColor="#6a7170"
+                    android:textColorHint="#6a7170"
+                    android:textColorLink="#6a7170"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:text="Add"
+                    android:textSize="12sp"
+                    android:id="@+id/promoTools_button"
+                    />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:id="@+id/showpromoTools_linearLayout"
+            android:layout_below="@+id/promoTools_linearLayout">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:id="@+id/promoTools_textview1"
+                android:textSize="13sp"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+               />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:text="clear"
+                android:textSize="12sp"
+                android:id="@+id/promoToolsclear_button"
+                />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/promoTools_textview"
+                android:textSize="13sp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:layout_below="@+id/promoTools_linearLayout"/>
+
+        <Spinner
+            android:id="@+id/workPlace_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_marginTop="20dp"
+            android:entries="@array/workPlace_array"
+            android:layout_below="@+id/showpromoTools_linearLayout"/>
+
+
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="SAVE"
+            android:layout_below="@+id/workPlace_spinner"
+            android:layout_toRightOf="@+id/btnDelete"
+            android:id="@+id/btnSave"
+            android:layout_marginBottom="100dp"
+            android:background="#80d7f0"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

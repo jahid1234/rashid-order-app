@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.rashidgroupapp.Other.NewChemist">
+
+    <RelativeLayout
+        android:id="@+id/linear_layout_varticle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:background="#32c0ee"
+            android:layout_height="?attr/actionBarSize" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:text="Naafco Group"/>
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:id="@+id/backImage_button"
+                    android:background="@android:color/transparent"
+                    />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/toolbar"
+            android:background="#ffffffff"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:id="@+id/header_textView"
+            android:text="New Chemist Entry"
+            android:textSize="25sp"
+            android:textColor="#6a7170"/>
+
+
+            <EditText
+                android:id="@+id/chemistName_editText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_textView"
+                android:layout_marginTop="60dp"
+                android:hint="Enter Chemist Name Here"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170" />
+
+            <EditText
+                android:id="@+id/address_editText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chemistName_editText"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#6a7170"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:hint="Shop Address"
+                android:textColor="#6a7170" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/address_editText"
+            android:id="@+id/linear_layout1"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/tradeLicense_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight=".4"
+                android:textColorHint="#6a7170"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:hint="Enter Trade License"
+                android:textColor="#6a7170"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/drugLicense_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_weight=".4"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:hint="Enter Drug License"
+                android:textColorHint="#6a7170"
+                android:textColor="#6a7170" />
+
+
+
+        </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/mobile_editText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_layout1"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:hint="Enter Mobile Number Here"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"/>
+
+            <EditText
+                android:id="@+id/contactPerson_editText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobile_editText"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:hint="Enter Contact Perseon Here"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"/>
+
+            <EditText
+                android:id="@+id/email_editText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contactPerson_editText"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:hint="Enter Email"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"/>
+
+            <EditText
+                android:id="@+id/nearbyHospitals_editText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email_editText"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:hint="Enter Nearby Hospitals or Clinic"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"/>
+
+
+            <EditText
+                android:id="@+id/estimatedSales_editText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nearbyHospitals_editText"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:hint="Enter Estimated Sales"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"/>
+
+        <EditText
+            android:id="@+id/ownerName_editText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/estimatedSales_editText"
+            android:layout_marginTop="20dp"
+            android:hint="Owner Name"
+            android:textColorHint="#6a7170"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:textColor="#6a7170" />
+
+        <EditText
+            android:id="@+id/ownerAddress_editText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/ownerName_editText"
+            android:hint="Owner Address"
+            android:textColorHint="#6a7170"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:textColor="#6a7170"
+            />
+
+
+        <Button
+            android:layout_below="@+id/ownerAddress_editText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveChemist_button"
+            android:text="Save"
+            android:background="#80d7f0"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="40dp"
+            android:textAlignment="center"
+            />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

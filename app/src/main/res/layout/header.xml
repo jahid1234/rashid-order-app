@@ -1,0 +1,73 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    >
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#80d7f0"
+        android:backgroundTint="#80d7f0"
+
+        >
+
+        <TextView
+            android:layout_column="0"
+            android:padding="5sp"
+            android:gravity="left"
+            android:text="Product"
+            android:textStyle="bold"
+            android:background="#80d7f0"
+            android:layout_span="4"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_column="1"
+            android:padding="5sp"
+            android:gravity="left"
+            android:text="Unit Price"
+            android:textStyle="bold"
+            android:background="#80d7f0"
+            android:layout_span="2"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_column="2"
+            android:padding="5sp"
+            android:gravity="left"
+            android:text="Quantity"
+            android:textStyle="bold"
+            android:background="#80d7f0"
+            android:layout_span="1"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_column="3"
+            android:padding="5sp"
+            android:gravity="left"
+            android:text="UOM"
+            android:textStyle="bold"
+            android:background="#80d7f0"
+            android:layout_span="1"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_column="4"
+            android:padding="5sp"
+            android:gravity="left"
+            android:text="Price"
+            android:textStyle="bold"
+            android:background="#80d7f0"
+            android:layout_span="1"
+            >
+        </TextView>
+
+
+    </TableRow>
+
+
+</TableLayout>

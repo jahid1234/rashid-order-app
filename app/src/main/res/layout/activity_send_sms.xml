@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.rashidgroupapp.Other.SendSms">
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <androidx.appcompat.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:background="#32c0ee"
+            android:layout_height="?attr/actionBarSize" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:text="Naafco Group"/>
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:id="@+id/backImage_button"
+                    android:background="@android:color/transparent"
+                    />
+
+            </LinearLayout>
+
+        </androidx.appcompat.v7.widget.Toolbar>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/toolbar"
+            android:background="#ffffff"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview1"
+            android:text="Sending SmS"
+            android:textSize="25sp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:textColor="#6a7170"
+            android:textColorHint="#6a7170"
+            android:textColorLink="#6a7170"/>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:textColor="#6a7170"
+            android:textColorHint="#6a7170"
+            android:textColorLink="#6a7170"
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"
+            android:layout_below="@+id/textview1"
+            />
+
+
+
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:hint="Enter Phone Number"
+            android:layout_marginTop="20dp"
+            android:phoneNumber="true"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:textColor="#6a7170"
+            android:textColorHint="#6a7170"
+            android:textColorLink="#6a7170"
+            android:layout_below="@+id/textView2"
+            />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:layout_below="@+id/editText"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:textColor="#6a7170"
+            android:textColorHint="#6a7170"
+            android:textColorLink="#6a7170"
+            android:hint="Enter SMS"
+            android:inputType="textMultiLine"
+            />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Sms"
+            android:background="#32c0ee"
+            android:id="@+id/btnSendSMS"
+            android:layout_below="@+id/editText2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="350dp"/>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

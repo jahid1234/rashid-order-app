@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#32c0ee"
+    tools:context="com.example.root.rashidgroupapp.Activity.Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logo"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/logo_11"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/header_textView"
+            android:text="MENU"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:gravity="center_horizontal" />
+
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/DBsync_button"
+            android:layout_marginTop="40dp"
+            android:onClick="DBsyncActivity"
+            android:background="#80d7f0"
+            android:text="DB Sync"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/changePassword_button"
+            android:layout_marginTop="20dp"
+            android:onClick="updatePasswordActivity"
+            android:background="#80d7f0"
+            android:text="Change Password"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/order_button"
+            android:layout_marginTop="20dp"
+            android:onClick="orderActivity"
+            android:background="#80d7f0"
+            android:text="Sales Order"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/load_orderRecord_button"
+            android:layout_marginTop="20dp"
+            android:onClick="loadSalesOrder"
+            android:background="#80d7f0"
+            android:text="Sync SalesOrder Record"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewSummary_button"
+            android:layout_marginTop="20dp"
+            android:onClick="summaryLayoutActivity"
+            android:background="#80d7f0"
+            android:text="Order Summary View"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/partyBalance_button"
+            android:layout_marginTop="20dp"
+            android:onClick="partyBalanceActivity"
+            android:background="#80d7f0"
+            android:text="Party Balance View"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/stockStatement_button"
+            android:layout_marginTop="20dp"
+            android:onClick="stockActivity"
+            android:background="#80d7f0"
+            android:text="Statement Of Stock(Sku Wise)"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/approve_button"
+            android:layout_marginTop="20dp"
+            android:onClick="OrderListForApprovalActivity"
+            android:background="#80d7f0"
+            android:text="Approve Sales Order"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/collectionStalement_button"
+            android:layout_marginTop="20dp"
+            android:onClick="collectionStalementActivity"
+            android:background="#80d7f0"
+            android:text="Collection Stalement"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/blank_button"
+            android:layout_marginTop="20dp"
+            android:background="#32c0ee"
+            android:enabled="false"
+            />
+    </LinearLayout>
+
+</ScrollView>

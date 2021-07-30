@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/record_row"
+            >
+
+            <TextView
+                android:text="Party ID"
+                android:id="@+id/party_id_list"
+                android:layout_column="0"
+                android:padding="10sp"
+                android:gravity="left"
+                android:layout_span="4"
+                >
+            </TextView>
+
+            <TextView
+                android:text="Party Name"
+                android:id="@+id/party_name_list"
+                android:layout_column="1"
+                android:padding="10sp"
+                android:gravity="left"
+                android:layout_span="4"
+                >
+            </TextView>
+
+
+            <TextView
+                android:text="Balance"
+                android:id="@+id/party_balance_list"
+                android:layout_column="2"
+                android:padding="10sp"
+                android:gravity="left"
+                android:layout_span="2"
+                >
+            </TextView>
+        </TableRow>
+
+    </TableLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.rashidgroupapp.Other.DoctorsInfo">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:background="#32c0ee"
+            android:layout_height="?attr/actionBarSize" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:text="Naafco Group"/>
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".2"
+                    android:id="@+id/backImage_button"
+                    android:background="@android:color/transparent"
+                    />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/toolbar"
+            android:background="#ffffffff"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:id="@+id/header_textView"
+            android:text="Dr Information"
+            android:textSize="25sp"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:textColor="#6a7170"
+            android:textColorHint="#6a7170"
+            android:textColorLink="#6a7170" />
+
+
+        <EditText
+            android:id="@+id/drName_editText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_below="@+id/header_textView"
+            android:hint="Dr Name"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:textColor="#6a7170"
+            android:textColorHint="#6a7170"
+            android:textColorLink="#6a7170"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/drName_editText"
+            android:id="@+id/linear_layout1"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/qualification_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:hint="Qualification"
+                android:layout_marginRight="5dp"
+
+                />
+
+            <EditText
+                android:id="@+id/instution_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:hint="Institution"
+                android:layout_marginLeft="5dp"
+
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/linear_layout1"
+            android:id="@+id/linear_layout2"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/specialisation_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:hint="Specialisation"
+                android:layout_marginRight="5dp"
+
+                />
+
+            <EditText
+                android:id="@+id/designation_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:hint="designation"
+                android:layout_marginLeft="5dp"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/linear_layout2"
+            android:id="@+id/linear_layout3"
+            android:layout_marginTop="20dp"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/officePhone_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:hint="Office Phone Number"
+                android:layout_marginRight="5dp"
+
+                />
+
+            <EditText
+                android:id="@+id/resPhoneNumber_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:hint="Res Phone   Number"
+                android:layout_marginLeft="5dp"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/linear_layout3"
+            android:id="@+id/linear_layout4"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/mobile_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:hint="Mobile Number"
+                android:layout_marginRight="5dp"
+
+                />
+
+            <EditText
+                android:id="@+id/email_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:hint="Email Address"
+                android:layout_marginLeft="5dp"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/mailingAddress_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear_layout4"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:textColor="#6a7170"
+            android:textColorHint="#6a7170"
+            android:textColorLink="#6a7170"
+            android:hint="Mailing Address"
+            android:layout_marginTop="20dp"
+
+            />
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_below="@+id/mailingAddress_editText"
+            android:layout_marginTop="30dp"
+            android:id="@+id/header1_textView"
+            android:text="Personal Information"
+            android:textSize="25sp"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:textColor="#6a7170"
+            android:textColorHint="#6a7170"
+            android:textColorLink="#6a7170" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/header1_textView"
+            android:id="@+id/linear_layout7"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:id="@+id/dob_textView"
+                android:layout_width="0dp"
+                android:layout_weight=".4"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:text="DOB(YYYY-MM-DD)"
+                android:textSize="14sp"
+                />
+            <EditText
+                android:id="@+id/dob_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:backgroundTint="@android:color/holo_blue_bright"
+                android:textColor="#6a7170"
+                android:textColorHint="#6a7170"
+                android:textColorLink="#6a7170"
+                android:hint="DOB (YYYY-MM-DD)"
+                android:inputType="date"
+
+                />
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:id="@+id/datePicker_imagebutton"
+                android:onClick="onClickDatePicker"
+                android:background="@android:color/transparent"
+                android:src="@drawable/calendar1"
+                android:layout_marginRight="5dp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/homeDistric_editText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:textColor="#6a7170"
+            android:textColorHint="#6a7170"
+            android:textColorLink="#6a7170"
+            android:hint="Home District"
+            android:layout_below="@+id/linear_layout7"
+
+
+                />
+
+
+        <EditText
+            android:id="@+id/spouseName_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/homeDistric_editText"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:textColor="#6a7170"
+            android:textColorHint="#6a7170"
+            android:textColorLink="#6a7170"
+            android:hint="Spouse Name &amp; Profession"
+            android:layout_marginTop="20dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spouseName_editText"
+            android:orientation="horizontal"
+            android:id="@+id/linear_layout5"
+            android:layout_marginTop="20dp">
+
+
+        <TextView
+            android:id="@+id/marriageDay_TextView"
+            android:layout_width="0dp"
+            android:layout_weight=".4"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:textColor="#6a7170"
+            android:textColorHint="#6a7170"
+            android:textColorLink="#6a7170"
+            android:text="Marriage Day(YYYY-MM-DD)"
+            android:textSize="11sp"
+            />
+
+        <EditText
+            android:id="@+id/marriageDay_editText"
+            android:layout_width="0dp"
+            android:layout_weight=".4"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spouseName_editText"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:textColor="#6a7170"
+            android:textColorHint="#6a7170"
+            android:textColorLink="#6a7170"
+            android:hint="YYYY-MM-DD"
+            android:inputType="date"
+
+            />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".1"
+                android:id="@+id/datePick_imagebutton"
+                android:onClick="onClickDatePicker_2"
+                android:background="@android:color/transparent"
+                android:src="@drawable/calendar1"
+                />
+
+            </LinearLayout>
+
+
+            <EditText
+            android:id="@+id/personalLikings_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear_layout5"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:textColor="#6a7170"
+            android:textColorHint="#6a7170"
+            android:textColorLink="#6a7170"
+            android:hint="Personal Likings"
+            android:layout_marginTop="20dp"
+
+            />
+
+
+
+        <EditText
+            android:id="@+id/personalDislikings_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/personalLikings_editText"
+            android:backgroundTint="@android:color/holo_blue_bright"
+            android:textColor="#6a7170"
+            android:textColorHint="#6a7170"
+            android:textColorLink="#6a7170"
+            android:hint="personal Dislikings"
+            android:layout_marginTop="20dp"
+
+            />
+
+
+
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/next_button"
+            android:layout_below="@id/personalDislikings_editText"
+            android:layout_marginTop="30dp"
+            android:background="#80d7f0"
+            android:layout_marginBottom="30dp"
+            android:onClick="chamberDetails"
+            android:text="Next"
+
+            />
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

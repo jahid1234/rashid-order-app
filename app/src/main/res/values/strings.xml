@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">NaafcoAndroidApp</string>
+
+    <string-array name="drORpharma_array">
+        <item>Doctor</item>
+        <item>Pharmacy</item>
+
+    </string-array>
+
+    <string-array name="guestORPerma_array">
+        <item>Guest Doctor</item>
+        <item>Permanent Doctor</item>
+
+    </string-array>
+
+
+    <string-array name="bellissimoItem_array">
+        <item>Bellissimo 1liter</item>
+        <item>Bellissimo 1/2 liter</item>
+        <item>Bellissimo Cone 121ml</item>
+        <item>Bellissimo Creations</item>
+        <item>Bellissimo Cup</item>
+        <item>Stick Primo</item>
+        <item>Stick Suprimo</item>
+    </string-array>
+
+    <string-array name="promoTools_array">
+
+        <item>Pad</item>
+        <item>Literature</item>
+        <item>Calendar</item>
+        <item>Gift</item>
+    </string-array>
+
+
+    <string-array name="workPlace_array">
+
+        <item>HQ/EX</item>
+        <item>EX</item>
+        <item>HQ</item>
+        <item>OS</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.rashidgroupapp.Other.EditData">
+
+
+
+
+
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/header_textView"
+        android:id="@+id/product_spinner"/>
+
+    <Spinner
+        android:id="@+id/item_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/product_spinner"/>
+
+    <Spinner
+        android:id="@+id/flavour_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/item_spinner"/>
+
+
+
+    <EditText
+        android:id="@+id/editText_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/flavour_spinner"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:textColor="@android:color/black" />
+
+
+    <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/editText_quantity"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="DELETE"
+                android:id="@+id/btnDelete"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="SAVE"
+                android:layout_toRightOf="@+id/btnDelete"
+                android:id="@+id/btnSave"/>
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>

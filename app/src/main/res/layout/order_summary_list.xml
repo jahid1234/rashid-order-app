@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+
+          <TextView
+
+               android:text="DocNo"
+               android:id="@+id/summary_doc"
+               android:layout_height="wrap_content"
+               android:layout_width="0dp"
+               android:layout_weight="20"
+               android:textAllCaps="true"
+               android:textStyle="bold"
+               android:gravity="center"
+                >
+            </TextView>
+
+            <TextView
+                android:text="Customer"
+                android:id="@+id/summary_customer"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:gravity="center"
+                >
+            </TextView>
+
+            <TextView
+                android:text="Date"
+                android:id="@+id/summary_date"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:gravity="center"
+                >
+            </TextView>
+
+            <TextView
+                android:text="Price"
+                android:id="@+id/summary_price"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:gravity="center"
+                >
+            </TextView>
+
+            <TextView
+                android:text="Details"
+                android:id="@+id/summary_details"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@color/backgroundBill"
+                android:textColor="@color/colorRed"
+                >
+            </TextView>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        android:layout_margin="0dp"/>
+
+</LinearLayout>

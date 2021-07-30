@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="1"
+    tools:context="com.example.root.rashidgroupapp.Activity.OrderListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#119898">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="clip_horizontal"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight=".7"
+                    android:text="List Of Orders"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".13"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:weightSum="100"
+        >
+
+            <TextView
+                android:text="Customer"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="20"
+                android:padding="10sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:gravity="center"></TextView>
+                <TextView
+                    android:text="Product"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="20"
+                    android:padding="10sp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:gravity="center"></TextView>
+
+                <TextView
+                    android:text="Unit Price"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="20"
+                    android:padding="10sp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:gravity="center"></TextView>
+
+                <TextView
+                    android:text="Quantity"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="13"
+                    android:padding="10sp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:gravity="center"></TextView>
+
+                <TextView
+                    android:text="UOM"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:padding="10sp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:gravity="center"></TextView>
+
+                <TextView
+                    android:text="Price"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="17"
+                    android:padding="10sp"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:gravity="center"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:orientation="vertical"
+
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/order_list_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".05"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".4"
+            android:gravity="start"
+            android:text="Total Price : " />
+
+        <TextView
+            android:id="@+id/tPrice_textView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".6"
+            android:gravity="start"
+            android:text="1000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".12"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".4"
+            android:gravity="start"
+            android:text="Total Price InWords : " />
+
+        <TextView
+            android:id="@+id/tPrice_textView_inwords"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".6"
+            android:gravity="start"
+            android:text="Hundred" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/send_order_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="Send To Server"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>
